@@ -1,6 +1,5 @@
 ![](headline.png)
 
-# geospatial_fraud_analysis
 
 This relates to the sales journey of the retail channel analysis in terms of developing a range of features to identify likely cases of fraud and or abuse via purchasing behaviour - this example is a set of features based on the geographical location of sales.
 
@@ -10,7 +9,7 @@ It is also a good example of why solutions need to be flexible to change over ti
 
  
 
-PROOF OF CONCEPT:
+# PROOF OF CONCEPT:
 
 I started with a few example cases from the fraud investigations team of purchases that were linked to fraudulent activity, such as stolen credit cards for example, and was asked to do some analysis across the data sets available to see if we could find any patterns.
 
@@ -30,13 +29,13 @@ What I found was that the majority of locations were spread randomly around the 
 
  
 
-TESTING THE CONCEPT WITH SOME SAMPLE CASES OF MY OWN FOR REVIEW
+# TESTING THE CONCEPT WITH SOME SAMPLE CASES OF MY OWN FOR REVIEW
 
 Once I had these examples tested out I went back with some counter examples to expand the list and was told that my expanded list was 95% accurate with finding a number of sales that had since come through in the days since starting the investigation - and a few that even the credit card merchants had missed that were to be cleaned up.
 
  
 
-SCALING THIS APPROACH ACROSS THOUSANDS OF RETAIL OUTLET LOCATIONS WITH PYTHON
+# SCALING THIS APPROACH ACROSS THOUSANDS OF RETAIL OUTLET LOCATIONS WITH PYTHON
 
 To then scale this approach across several thousand retail outlets across Australia, I could not manually check and cross check them all. At first I tried getting the business addresses and checking against opensource business GPS (lattitude and longitude) coordinates but found that about 35% addresses from our sales partner base was not aligning with the Auspost addresses for data matching purposes.
 
@@ -46,7 +45,7 @@ To overcome this I then developed a script to call the Google API to feed the ad
 
  
 
- BRINGING IT ALL TOGETHER
+ # BRINGING IT ALL TOGETHER
 
 From here I took the GPS data and created a feature store in AWS - the idea being that we could automate taking in new sales cases and cross-reference those sales with this coordinate feature store to calculate proximity values that could adjust as needed over time as trends changed.
 
