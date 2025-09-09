@@ -1,4 +1,4 @@
-![](https://i.postimg.cc/134C8k3Z/Screenshot-from-2025-08-22-09-35-55.png)
+![](headline.png)
 
 # geospatial_fraud_analysis
 
@@ -23,7 +23,7 @@ One idea I had was to find the store locations of these purchases and see if the
 This is a totally ficticious example I just did on Google maps now for demonstration purposes and deliberately has no relation at all to any of the actual investigations ---
 
  
-![](https://i.postimg.cc/NfdCfsY4/Screenshot-from-2025-08-20-21-35-07.png)
+![](map_snippet.png)
  
 
 What I found was that the majority of locations were spread randomly around the country typically, but a few small clusters like this were enough to end up in my sample list here.
